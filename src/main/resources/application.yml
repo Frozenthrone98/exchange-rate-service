@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: exchange-rate-service
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  datasource:
+    url: jdbc:h2:mem:exchange_db
+    username: user
+    password: password
+
+api.external-url: "https://open.er-api.com/v6/latest"
+
+server:
+  port: 8085
