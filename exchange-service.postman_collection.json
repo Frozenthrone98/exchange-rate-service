@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "40e5709e-2d21-4e18-bc8d-0342d35ff693",
+		"name": "exchange-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7407851"
+	},
+	"item": [
+		{
+			"name": "exchange - findAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8085/api/v1/exchange-records"
+			},
+			"response": []
+		},
+		{
+			"name": "exchange - rate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\" : 80000,\r\n    \"source_currency\" : \"EUR\",\r\n    \"destination_currency\" : \"PEN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8085/api/v1/exchange-rate/by-code"
+			},
+			"response": []
+		}
+	]
+}
